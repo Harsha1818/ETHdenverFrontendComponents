@@ -4,14 +4,9 @@ function App() {
   return (
     <>
     <div className="text-xl">
-      <Carf_Profile/> 
       <FullscreenOverlayNav/> 
-      
-      
-      
-      
-      
-      
+      <Carf_Profile/> 
+
     </div>
       
     </>

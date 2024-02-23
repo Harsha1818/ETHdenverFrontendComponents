@@ -7,7 +7,7 @@ export const Carf_Profile = () => {
     var profileName= "SRH"
   return (
     <div>
-        <div class="box-border h-[500px] w-[450px] p-4 border-4 ">
+        <div class="box-border h-[500px] w-[450px] p-4 border-4 shadow-lg shadow-indigo-500/40 ">
             <img/>
 
            <div class="flex items-center justify-center flex-col " >
