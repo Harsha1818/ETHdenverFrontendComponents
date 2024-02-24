@@ -13,8 +13,8 @@ function PurpleButton(props) {
 
   return (
 
-    <button style={buttonStyle} class='flex' >
-      <UserPlusIcon className="h-4 w-4 whitespace-normal " /><p class= 'text-xs'>{props.ButtonText}</p>
+    <button style={buttonStyle} className='flex ease-in duration-300'>
+      <UserPlusIcon className=" h-4 w-4 whitespace-normal " /><p class= 'text-xs'>{props.ButtonText}</p>
     </button>
   );
 }
