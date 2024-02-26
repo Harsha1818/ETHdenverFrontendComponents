@@ -1,7 +1,44 @@
 import React from 'react';
-import PurpleButton from './PurpleButton';
-import cp from '/Users/harshatumuluri/Desktop/Desktop /eTHdenveR/socialmedia/src/Assets/seattle.jpeg'
-import Flip from './Flip';
+import cp from '../Assets/seattle.jpeg'
+import { UserPlusIcon } from '@heroicons/react/24/solid'
+import logo from '../Assets/harsha.jpeg';
+
+function PurpleButton(props) {
+  const buttonStyle = {
+    backgroundColor: '#9155D8',
+    color: '#FFFFFF', // Text color
+    padding: '10px 20px',
+    borderRadius: '5px',
+    border: 'none',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  };
+
+  return (
+
+    <button style={buttonStyle} className='flex ease-in duration-300'>
+      <UserPlusIcon className=" h-4 w-4 whitespace-normal " /><p class= 'text-xs'>{props.ButtonText}</p>
+    </button>
+  );
+}
+
+
+const Flip = () => {
+  return (
+    <div className="relative flex justify-center items-center top-[-50px]">
+      <div className="w-32 h-32">
+        <div className="inset-0 flex justify-center items-center rounded-full ">
+          <div className="w-24 h-24 rounded-full shadow-lg transform -rotate-y-0 transition-transform duration-1000 ease-in-out hover:rotate-y-180">
+            <img src={logo} alt="Coin" className="w-full h-full rounded-full" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
 
 export const Carf_Profile = () => {
     var profileName= "SRH"
